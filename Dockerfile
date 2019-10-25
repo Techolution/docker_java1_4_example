@@ -10,5 +10,5 @@ ENV PATH $PATH:$JAVA_HOME/bin
 ADD ./java_1_4_sample /java_1_4_sample
 RUN chmod -R 777 /java_1_4_sample/
 RUN javac java_1_4_sample/src/com/company/Main.java
-CMD  java -cp java_1_4_sample/src/ com.company.Main
+CMD  java -cp java_1_4_sample/src/ com.company.Main 180000
 
